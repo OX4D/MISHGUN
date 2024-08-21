@@ -110,7 +110,7 @@ function update() {
     if (!gameStarted) {
         ctx.fillStyle = "white";
         ctx.font = "30px 'Arial', cursive";
-        ctx.fillText("Нажми ЛКМ, чтобы начать", canvas.width / 2 - 200, canvas.height / 2);
+        ctx.fillText("Нажми, чтобы начать", canvas.width / 2 - 200, canvas.height / 2);
         return requestAnimationFrame(update);
     }
 
@@ -160,7 +160,7 @@ function update() {
             drawEnemies();
         } else {
             stopBackgroundMusic();
-            alert(`ТЫ ПРОСРАЛ! Настрелял фрагов: ${getTotalScore()} ЛВЛ: ${level}`);
+            alert(`ПОТРАЧЕНО! Настрелял фрагов: ${getTotalScore()} ЛВЛ: ${level}`);
             document.location.reload();
             return;
         }
